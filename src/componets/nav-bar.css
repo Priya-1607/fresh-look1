@@ -1,0 +1,358 @@
+.imgbox{
+    background-color:#191818 ;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+  top: 0px;
+}
+.er{
+    padding-right: 5rem;
+}
+.test2{
+    font-size: 1rem;
+    font-weight:400;
+    color:#626262;
+    font-family:"Poppins"
+}
+.q{
+    margin-top: -11px;
+    position: relative;
+  z-index: 1;
+}
+.star1{
+    position: absolute;
+    z-index: 2;
+    left: 29rem;
+    top: 93px;
+  
+}
+.backImage1{
+    position: relative;
+    z-index: 1;
+   bottom: -20px;
+    margin-left: 90px;
+    background-color: lightgray 50% / cover;
+} 
+
+.we{
+   
+    padding-left: 5rem;
+}
+
+.backImage2{
+    margin-left: 12rem;
+    margin-top: -644px;
+    margin-bottom: 10px;
+    
+}
+.backImage3{
+    bottom: 34rem;
+    position: relative;
+    z-index:2;
+    margin-left: 525px;
+    background-color: #F07E15;
+    opacity: 0.7;
+   justify-content: end;
+    
+}
+.fresh{
+    bottom:14rem;
+    padding-left: 204px;
+    position: relative;
+    z-index:3;
+}
+.year{
+    bottom: 11rem;
+    padding-left: 32rem;
+    position: relative;
+    z-index:3;
+}
+.starline{
+    position: relative;
+    z-index:3;
+    bottom: 10rem;
+}
+.look{
+    bottom: 10rem;
+    padding-left: 17rem;
+    position: relative;
+    z-index:3;
+}
+.sqareMore{
+    padding-left: 7rem;
+    position: relative;
+    z-index:3;
+bottom: 60px;
+}
+.boxtext{
+    padding-left: 16rem;
+    position: relative;
+    z-index:3;
+
+}
+.new{
+    padding-left: 4rem;
+    position: relative;
+    top:-25rem
+}
+.title{
+    justify-content: flex-end;
+}.box2{
+    width: 20rem;
+    height: 20rem;
+}
+.acc{
+    padding-right: 10rem;
+}
+.box{
+    width:100rem
+}
+.title1{
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 31px;
+
+}
+.price{
+    
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 31px;
+   
+   
+    
+}
+.desc{
+    font-size: 10px;
+    font-weight: 400;
+    color: #16161580;
+}
+.arrow{
+    padding-left: 40rem;
+   
+}
+.newtext{
+    padding-bottom: 5rem;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.free{
+    font-size:12px ;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+   border: #ffffff solid 1px;
+    min-width: 160px;
+  
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.login{
+    font-family: "Poppins";
+    color:#626262
+}
+.qw{
+    font-family:"Poppins" ;
+    color:#626262;
+    font-size: 1rem;
+}
+.shopkart{
+    font-size:40px;
+    font-weight:275 ;
+    color:#FFF;
+    font-family:"Poppins"
+}
+.wish{
+    font-size:14px;
+    font-weight:400 ;
+    color:#FFF;
+    padding-top:30px;
+    font-family:"Work Sans"
+}
+.newProduct{
+     font-family:"Syne"; font-size:90px; font-weight:600;
+}
+.lineImagePhone{
+    display: none;
+}
+.boybox{
+    width: 40%;
+}
+/* color={'#FFF'} fontSize={"14px"} sx={{paddingTop:"30px",fontFamily:"Work Sans"}}  fontWeight={400} */
+@media (max-width: 768px) and (min-width: 390px){
+   
+    .we {
+        padding-left: 0rem;
+    }
+    .arrow{
+        margin:-70rem;
+    }
+    .boybox{
+        width: 100%;
+    }
+    .boxtext {
+        display: none;
+    }
+    .imgbox {
+        height: 682px;
+    }
+   
+    .text1 {
+        font-size: 0.6rem;
+    }
+    .test2{
+        font-size: 0.6rem;
+      
+    }
+    .login{
+        font-size: 0.6rem;
+    }
+   .qw{
+    font-size: 0rem;
+   }
+   .car{
+    padding-left:15px ;
+   }
+   .shopkart {
+    padding-left: 15px;
+    left: 5px;
+    font-size: 30px;
+}
+.wish{
+    font-size:0px;
+}
+.show{
+    display: none;
+}
+.new{
+    top:-19rem;
+    padding-left: 1rem
+}
+
+.backImage2 {
+    margin-left: 10rem;
+    margin-top: -563px;
+    margin-bottom: 0px;
+}
+.newProduct{
+    font-size: 45px;
+}
+.starline {
+    width: 10rem;
+    bottom: 5rem;
+}
+.star1 {
+    
+    left: 0rem; 
+   
+}
+.backImage3 {
+    height: 20rem;
+    bottom: 26rem;
+    margin-left: 0px;
+}
+.desc{
+    font-size: 8px;
+}
+.acc {
+ padding-right: 0rem;
+}
+.title1 {
+    
+    font-size: 10px;
+   
+    line-height: 0px;
+}
+.box2 {
+    width: 6rem;
+    height: 12rem;
+}
+.lineImage{
+    display: none;
+    
+}
+.box12{
+  display: none;
+}
+.fresh {
+    width: 10rem;
+    bottom: -14rem;
+    padding-left: 0px;
+    
+}
+.look {
+    width: 15rem;
+    left: 4rem;
+    bottom: 3rem;
+    padding-left: 0rem;
+}
+.year {
+    width: 10rem;
+    bottom: -18rem;
+    padding-left: 0rem;
+    
+}
+.backImage1 {
+    position: relative;
+    z-index: 1;
+    bottom: -20px;
+    margin-left: 87px;
+    background-color: lightgray 50% / cover;
+}
+.sqareMore {
+    padding-left: 1rem;
+    
+    bottom: -29px;
+}
+.fresh {
+    left: 2rem;
+    width: 15rem;
+    bottom: 6rem;
+    padding-left: 0px;
+}
+.year {
+    left: 6rem;
+    width: 15rem;
+    bottom: 4rem;
+    padding-left: 0rem;
+}
+
+}
