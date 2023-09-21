@@ -27,7 +27,7 @@ import boy2 from '../../src/componets/assetes/boy.png'
 import InputLabel from '@mui/material/InputLabel';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import NativeSelect from '@mui/material/NativeSelect';
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
@@ -57,7 +57,13 @@ function NavBar() {
         backgroundColor: '#1A1A1A',
       }}
     ><div className="flex justify-between p-[0.40rem] gap-x-3 we md:gap-x-0">
-    <div><div className="flex gap-x-3 car"><img src={car} alt='car' className="text-[#626262]"/> <p className='test2'>
+    <div><div className="flex gap-x-3 car">
+    <LazyLoadImage 
+      src={car} alt='car' className="text-[#626262]"
+       
+      />
+      {/* <img src={car} alt='car' className="text-[#626262]"/> */}
+       <p className='test2'>
     Free Delivery | Return Policy
 </p>
 {/* |<Typography fontWeight={400} color={'#9b9999'} className="flex gap-x-3">Return Policy</Typography> */}
@@ -65,22 +71,56 @@ function NavBar() {
     
     <div className="flex gap-x-3 er">
       <p className='login'>Login</p>
-<p className='qw'>Follow US</p><img src={facebook} alt='car'/><img src={linkdin} alt='car'/><img src={twitter} alt='car'/><img src={insta} alt='car'/>
+<p className='qw'>Follow US</p>
+<LazyLoadImage 
+      src={facebook} alt='facebook'   
+      />
+      <LazyLoadImage 
+      src={linkdin} alt='linkdin'      
+      />
+       <LazyLoadImage 
+      src={twitter} alt='twitter'
+      />
+       <LazyLoadImage 
+      src={twitter} alt='twitter'       
+      />
+      <LazyLoadImage 
+      src={insta} alt='twitter'       
+      />
+      {/* <img src={insta} alt='car'/>
+<img src={facebook} alt='car'/>
+<img src={linkdin} alt='car'/>
+<img src={twitter} alt='car'/>
+<img src={insta} alt='car'/> */}
 </div>
   </div>
   
 </Box>
 <div>
   <div>
- <img className='w-full mix-blend-overlay imgbox' src={rectangle} alt='img'/> 
+  <LazyLoadImage 
+     className='w-full mix-blend-overlay imgbox' src={rectangle} alt='img'    
+      />
+ {/* <img className='w-full mix-blend-overlay imgbox' src={rectangle} alt='img'/>  */}
  <div className="flex justify-between p-[0.40rem] gap-x-3 we">
  <p className='shopkart'>ShopKart</p>
  <div className="gap-x-3 er"><p className='wish'>WISHLIST (0) BAG (0)</p></div>
   </div>
    <div className="flex justify-between we">
    <div className='box12'>
-    <img className='star1' src={start1} alt='img'/>
-   <div className='lineImage'> <img src={line} alt='img' className='q'/></div>
+   <LazyLoadImage 
+    className='star1' src={start1} alt='img'    
+      />
+    {/* <img className='star1' src={start1} alt='img'/> */}
+   <div className='lineImage'>
+   <LazyLoadImage 
+    className='star1' src={start1} alt='img'    
+      />
+      <LazyLoadImage 
+    src={line} alt='img' className='q' 
+      />
+     {/* <img src={line} alt='img' className='q'/> */}
+     </div>
     </div>
    </div>
    <div className='w-full flex'>
@@ -110,10 +150,15 @@ function NavBar() {
    <Typography color={'#FFF'} fontSize={"18px"} sx={{fontFamily:"Work Sans"}} fontWeight={400}>CONTACT US</Typography>
    </div>
    <div className='boybox'>
-    <img src={boy} alt='img' className='backImage1'/>
+    {/* <img src={boy} alt='img' className='backImage1'/> */}
+    <LazyLoadImage 
+   src={boy} alt='img' className='backImage1'  
+      />
     {/* <img src={boy2} alt='img' className='phonebackImage1'/> */}
-    
-    <img src={star3} className="backImage2" alt='img'/>
+    <LazyLoadImage 
+   src={star3} className="backImage2" alt='img'
+      />
+    {/* <img src={star3} className="backImage2" alt='img'/> */}
     
    
     </div>
@@ -121,19 +166,36 @@ function NavBar() {
     </div>
  </div>
 </div>
-<img src={fresh} className="fresh" alt='img'/>
-<img src={year} className="year" alt='img'/>
-<img src={look} className="look" alt='img'/>
+<LazyLoadImage 
+   src={fresh} className="fresh" alt='img'
+      />
+{/* <img src={fresh} className="fresh" alt='img'/> */}
+<LazyLoadImage 
+  src={year} className="year" alt='img'
+      />
+{/* <img src={year} className="year" alt='img'/> */}
+<LazyLoadImage 
+ src={look} className="look" alt='img'
+      />
+{/* <img src={look} className="look" alt='img'/> */}
 
-
-<img src={square} className='sqareMore' alt='img'/>
+<LazyLoadImage 
+  src={square} className='sqareMore' alt='img'
+      />
+{/* <img src={square} className='sqareMore' alt='img'/> */}
 <div className="flex starline">
-<img src={line23} alt='img'/><img src={star4} alt='img'/>
+<LazyLoadImage 
+ src={line23} alt='img'/>
+{/* <img src={line23} alt='img'/>
+<img src={star4} alt='img'/> */}
+<LazyLoadImage 
+ src={star4} alt='img'/>
 <div className='boxtext' ><Typography>Oregon jacket</Typography>
 <Typography>$124</Typography></div>
 </div>
-
-<img src={rectangle29} className="backImage3" alt='img'/>
+<LazyLoadImage 
+src={rectangle29} className="backImage3" alt='img'/>
+{/* <img src={rectangle29} className="backImage3" alt='img'/> */}
 <NewComponent/>
     </div>
     
