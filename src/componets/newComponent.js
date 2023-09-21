@@ -9,12 +9,16 @@ import './../../src/componets/nav-bar.css'
 import Group from '../../src/componets/assetes/Group17.svg'
 import Arrow2 from '../../src/componets/assetes/Arrow2.svg'
 import Arrow1 from '../../src/componets/assetes/Arrow1.svg'
+import CircularProgress from '@mui/material/CircularProgress';
 function NewComponent() {
     const [dataValue,setData]= useState([]);
+    const [loading, setLoading] = useState(false);
     useEffect(() => {
+      setLoading(true);
         axios.get('https://fakestoreapi.com/products')
           .then(response => {
             setData(response.data);
+            setLoading(false);
             console.log(response.data)
           })
           
@@ -22,6 +26,14 @@ function NewComponent() {
             console.error(error);
           });
       }, []);
+      if (loading) {
+        return (
+          <Box sx={{ display: 'flex' }}>
+          <CircularProgress />
+        </Box>
+        )
+      }
+      
   return (
     <div className='new'>
      <div className='flex'>  <h2 className='newProduct'>New products</h2>

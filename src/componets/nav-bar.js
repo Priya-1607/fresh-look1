@@ -40,14 +40,7 @@ function NavBar() {
   const handleChange = (event) => {
     setAge(event.target.value);
   };
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+  
   return (
     <div className='mainDiv'>
 <Box
@@ -62,11 +55,9 @@ function NavBar() {
       src={car} alt='car' className="text-[#626262]"
        
       />
-      {/* <img src={car} alt='car' className="text-[#626262]"/> */}
        <p className='test2'>
     Free Delivery | Return Policy
 </p>
-{/* |<Typography fontWeight={400} color={'#9b9999'} className="flex gap-x-3">Return Policy</Typography> */}
 </div></div>
     
     <div className="flex gap-x-3 er">
@@ -87,11 +78,6 @@ function NavBar() {
       <LazyLoadImage 
       src={insta} alt='twitter'       
       />
-      {/* <img src={insta} alt='car'/>
-<img src={facebook} alt='car'/>
-<img src={linkdin} alt='car'/>
-<img src={twitter} alt='car'/>
-<img src={insta} alt='car'/> */}
 </div>
   </div>
   
@@ -101,7 +87,6 @@ function NavBar() {
   <LazyLoadImage 
      className='w-full mix-blend-overlay imgbox' src={rectangle} alt='img'    
       />
- {/* <img className='w-full mix-blend-overlay imgbox' src={rectangle} alt='img'/>  */}
  <div className="flex justify-between p-[0.40rem] gap-x-3 we">
  <p className='shopkart'>ShopKart</p>
  <div className="gap-x-3 er"><p className='wish'>WISHLIST (0) BAG (0)</p></div>
@@ -111,7 +96,6 @@ function NavBar() {
    <LazyLoadImage 
     className='star1' src={start1} alt='img'    
       />
-    {/* <img className='star1' src={start1} alt='img'/> */}
    <div className='lineImage'>
    <LazyLoadImage 
     className='star1' src={start1} alt='img'    
@@ -119,20 +103,10 @@ function NavBar() {
       <LazyLoadImage 
     src={line} alt='img' className='q' 
       />
-     {/* <img src={line} alt='img' className='q'/> */}
      </div>
     </div>
    </div>
    <div className='w-full flex'>
-   {/* <div className="topnav" id="myTopnav">
-  <a href="#home" className="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" className="icon" onclick="myFunction()">
-  <img src={Layer20} alt='Layer20'/>
-  </a>
-</div> */}
    <div className="flex justify-around w-3/5 p-[0.40rem] show">
    
     <Typography color={'#FFF'} fontSize={"18px"} fontWeight={400} sx={{paddingLeft:"50px",fontFamily:"Work Sans"}}>HOME</Typography>
@@ -150,17 +124,12 @@ function NavBar() {
    <Typography color={'#FFF'} fontSize={"18px"} sx={{fontFamily:"Work Sans"}} fontWeight={400}>CONTACT US</Typography>
    </div>
    <div className='boybox'>
-    {/* <img src={boy} alt='img' className='backImage1'/> */}
     <LazyLoadImage 
    src={boy} alt='img' className='backImage1'  
       />
-    {/* <img src={boy2} alt='img' className='phonebackImage1'/> */}
     <LazyLoadImage 
    src={star3} className="backImage2" alt='img'
       />
-    {/* <img src={star3} className="backImage2" alt='img'/> */}
-    
-   
     </div>
     
     </div>
@@ -169,25 +138,20 @@ function NavBar() {
 <LazyLoadImage 
    src={fresh} className="fresh" alt='img'
       />
-{/* <img src={fresh} className="fresh" alt='img'/> */}
 <LazyLoadImage 
   src={year} className="year" alt='img'
       />
-{/* <img src={year} className="year" alt='img'/> */}
 <LazyLoadImage 
  src={look} className="look" alt='img'
       />
-{/* <img src={look} className="look" alt='img'/> */}
-
 <LazyLoadImage 
   src={square} className='sqareMore' alt='img'
       />
-{/* <img src={square} className='sqareMore' alt='img'/> */}
+
 <div className="flex starline">
 <LazyLoadImage 
  src={line23} alt='img'/>
-{/* <img src={line23} alt='img'/>
-<img src={star4} alt='img'/> */}
+
 <LazyLoadImage 
  src={star4} alt='img'/>
 <div className='boxtext' ><Typography>Oregon jacket</Typography>
@@ -195,7 +159,6 @@ function NavBar() {
 </div>
 <LazyLoadImage 
 src={rectangle29} className="backImage3" alt='img'/>
-{/* <img src={rectangle29} className="backImage3" alt='img'/> */}
 <NewComponent/>
     </div>
     
